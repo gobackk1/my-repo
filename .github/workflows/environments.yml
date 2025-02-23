@@ -14,7 +14,7 @@ jobs:
     env:
       USERNAME: ${{vars.USERNAME}}
       PASSWORD: ${{vars.PASSWORD}}
-    streps:
+    steps:
       - run: echo "${USERNAME}"
       - run: echo "${PASSWORD:0:1} ${PASSWORD#?}"
 
